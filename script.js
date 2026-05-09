@@ -1,0 +1,1 @@
+const btn=document.querySelector('.comments button');const text=document.querySelector('textarea');const list=document.getElementById('comment-list');btn.onclick=()=>{if(text.value.trim()!=''){const div=document.createElement('div');div.className='comment';div.innerText=text.value;list.prepend(div);text.value='';}};
